@@ -1,0 +1,39 @@
+services:
+
+  web:
+    build: .
+    container_name: zero-trust-pro-web
+
+    ports:
+      - "5000:5000"
+
+    environment:
+      FLASK_ENV: production
+      SECRET_KEY: development-secret-key
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/zerotrustpro
+
+    depends_on:
+      - db
+
+    restart: unless-stopped
+
+
+  db:
+    image: postgres:16
+
+    container_name: zero-trust-pro-db
+
+    environment:
+      POSTGRES_DB: zerotrustpro
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    restart: unless-stopped
+
+
+volumes:
+
+  postgres_data:

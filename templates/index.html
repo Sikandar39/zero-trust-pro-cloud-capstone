@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}
+Zero Trust Pro | Cybersecurity & Cloud Learning
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            Cybersecurity & Cloud Learning Community
+        </span>
+
+        <h1>
+            Learn. Secure.
+            <span>Build with Confidence.</span>
+        </h1>
+
+        <p>
+            Zero Trust Pro is a cybersecurity and cloud learning
+            community focused on practical education, structured
+            learning, and hands-on activities.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="{{ url_for('programs') }}"
+               class="btn primary">
+                Explore Program
+            </a>
+
+            <a href="{{ url_for('domains') }}"
+               class="btn secondary">
+                Explore Domains
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span>WHAT WE OFFER</span>
+
+        <h2>
+            Practical Learning for the Modern Digital World
+        </h2>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>
+                Cybersecurity & Cloud Learning
+            </h3>
+
+            <p>
+                Beginner-friendly learning focused on
+                practical cybersecurity and cloud foundations.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Project-Based Learning
+            </h3>
+
+            <p>
+                Practical exercises and projects designed
+                to develop useful technical skills.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Blue & Red Team
+            </h3>
+
+            <p>
+                Learn defensive and offensive cybersecurity
+                concepts responsibly.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                CTF Labs
+            </h3>
+
+            <p>
+                Hands-on Capture the Flag activities
+                for practical cybersecurity learning.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section mission">
+
+    <span>OUR MISSION</span>
+
+    <h2>
+        Make cybersecurity and cloud education practical,
+        accessible, and grounded in skills learners can apply.
+    </h2>
+
+</section>
+
+{% endblock %}

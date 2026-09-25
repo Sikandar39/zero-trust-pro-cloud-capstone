@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}
+Leadership | Zero Trust Pro
+{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+
+    <span>LEADERSHIP</span>
+
+    <h1>
+        Meet Our Leadership
+    </h1>
+
+    <p>
+        The people behind the vision and learning community.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="leadership-grid">
+
+
+        <!-- FOUNDER -->
+
+        <article class="leader-card">
+
+            <div class="leader-photo">
+
+                <img
+                    src="{{ url_for(
+                    'static',
+                    filename='images/founder.jpg'
+                    ) }}"
+                    alt="Sikandar Shah"
+                >
+
+            </div>
+
+            <span>FOUNDER</span>
+
+            <h2>
+                Sikandar Shah
+            </h2>
+
+            <p>
+                Sikandar Shah founded Zero Trust Pro to make
+                cybersecurity and cloud learning more practical
+                and accessible.
+            </p>
+
+            <blockquote>
+
+                “At Zero Trust Pro, we believe security starts
+                with curiosity and grows through practice. Our
+                goal is to help every learner build useful skills,
+                think carefully about trust, and create technology
+                with security in mind.”
+
+            </blockquote>
+
+        </article>
+
+
+        <!-- CO-FOUNDER -->
+
+        <article class="leader-card">
+
+            <div class="leader-photo">
+
+                <img
+                    src="{{ url_for(
+                    'static',
+                    filename='images/co-founder.jpg'
+                    ) }}"
+                    alt="M Sabtain"
+                >
+
+            </div>
+
+            <span>CO-FOUNDER</span>
+
+            <h2>
+                M Sabtain
+            </h2>
+
+            <p>
+                M Sabtain co-founded Zero Trust Pro to help develop
+                its learning programs and community, with a focus
+                on practical cybersecurity education.
+            </p>
+
+            <blockquote>
+
+                “Learning technology is most powerful when we put
+                it into practice. We’re building a community where
+                people can explore, ask questions, and develop the
+                confidence to solve real cybersecurity and cloud
+                challenges.”
+
+            </blockquote>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+{% endblock %}

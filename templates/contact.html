@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}
+Contact | Zero Trust Pro
+{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+
+    <span>CONTACT</span>
+
+    <h1>
+        Connect With Zero Trust Pro
+    </h1>
+
+    <p>
+        Have a question or want to connect with our community?
+        Send us a message.
+    </p>
+
+</section>
+
+
+<section class="section contact-grid">
+
+    <div>
+
+        <h2>
+            Get in Touch
+        </h2>
+
+        <p>
+            Email:
+            zerotrustpro1@gmail.com
+        </p>
+
+        <p>
+            GitHub:
+            github.com/Sikandar39/Zero-Trust-Pro
+        </p>
+
+        <p>
+            Instagram:
+            @zerotrustpro1
+        </p>
+
+        <p>
+            YouTube:
+            @zerotrustpro1
+        </p>
+
+        <p>
+            TikTok:
+            @zerotrustpro1
+        </p>
+
+        <p>
+            Facebook:
+            @zerotrustpro1
+        </p>
+
+    </div>
+
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button
+            type="submit"
+            class="btn primary"
+        >
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+{% endblock %}
